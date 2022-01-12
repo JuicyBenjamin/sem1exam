@@ -214,6 +214,42 @@ section {
   width: 25%;
 }
 
+.choice {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.choice a {
+  display: block;
+  width: 150px;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.choice a:hover {
+  background-color: gray;
+  color: black;
+}
+
+.pilotContainer {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 600px) {
   img {
     width: 100%;
