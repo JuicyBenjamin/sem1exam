@@ -250,6 +250,10 @@ section {
   height: 100%;
 }
 
+.video video {
+  max-width: 100%;
+}
+
 @media (max-width: 600px) {
   img {
     width: 100%;
