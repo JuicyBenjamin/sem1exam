@@ -32,15 +32,36 @@
     </header>
     <img src="tema4_splash.png" alt="" />
     <main>
-      <article>
+      <section>
         <h1>Animation</h1>
         <p>
           Dette tema handlede om at designe og sætte op logik for et spil.
           Logikken kommer fra Javascript som blev introduceret under dette tema.
         </p>
-      </article>
-      <article>
-        <div class="leftDiv">
+        <p>
+          Jeg havde store problemer under dette tema. Af flere årsager. Som man
+          kan se ud fra min idé i videoen til under var mine første tanker noget
+          lidt andet end hvordan jeg endte ud med at sætte det op.
+        </p>
+        <p>
+          Efter at have valgt stilen "Happy Tree Friends" begyndte jeg at lave
+          assets til et spil som skulle fungere på denne måde.
+        </p>
+        <p>
+          Et godt stykke inde i forløbet får jeg feedbacken at mit spil var for
+          kompliceret til hvad vi skulle lave. Det var god feedback, men betød
+          så at meget skulle laves om. Efter det havde jeg problemer med Adobe
+          illustrator som nægtede at åbne mine filer, så jeg var nødt til at
+          starte fuldstændig forfra.
+        </p>
+        <p>
+          Så mens vi skulle bruge vores assets til at lære, sad jeg og lavede
+          mine assets på ny. Dette er ikke en forudsætning for optimal læring,
+          så jeg røg også bagud på kodningsdelen.
+        </p>
+      </section>
+      <section class="grid">
+        <div class="left">
           <iframe
             width="560"
             height="315"
@@ -51,32 +72,88 @@
             allowfullscreen
           ></iframe>
         </div>
-        <div class="rightDiv">
+        <div class="right">
+          <h2>Low fidelity prototype</h2>
           <p>
-            Jeg havde store problemer under dette tema. Af flere årsager. Som
-            man kan se ud fra min idé i videoen til venstre var mine første
-            tanker noget lidt andet end hvordan jeg endte ud med at sætte det
-            op.
+            En måde at visualisere for en hvordan spillet kunne fungere. Det er
+            en god måde og se om der er sammenhæng mellem ens tanker om sin idé
+            og så rent faktisk hvordan det kunne se ud.
           </p>
           <p>
-            Efter at have valgt stilen "Happy Tree Friends" begyndte jeg at lave
-            assets til et spil som skulle fungere på denne måde.
-          </p>
-          <p>
-            Et godt stykke inde i forløbet får jeg feedbacken at mit spil var
-            for kompliceret til hvad vi skulle lave. Det var god feedback, men
-            betød så at meget skulle laves om. Efter det havde jeg problemer med
-            Adobe illustrator som nægtede at åbne mine filer, så jeg var nødt
-            til at starte fuldstændig forfra.
-          </p>
-          <p>
-            Så mens vi skulle bruge vores assets til at lære, sad jeg og lavede
-            mine assets på ny. Dette er ikke en forudsætning for optimal læring,
-            så jeg røg også bagud på kodningsdelen.
+            Min idé var oprindeligt at man som stewardesse skulle slå de syndere
+            som larmede om bord på et fly, for at alle kunne få en bedre rejse.
+            Idéen kom efter at have arbejdet med en liste vi fik udleveret med
+            en masse ord, hvor tanken var at man skulle kombinere disse ord til
+            en slags ny fortælling.
           </p>
         </div>
-      </article>
+      </section>
+      <section class="grid">
+        <div class="left">
+          <h2>Valg af stil</h2>
+          <p>
+            Grundet det relativt voldelige aspekt af mit spil, valgte jeg en
+            stil som er kendt for sine meget grænseoverskridende og særdeles
+            voldelige animationer "Happy Tree Friends". Tanken med at vælge det
+            som stil var at understrege humoren i mit spil og fjerne fra
+            seriøsiteten af det.
+          </p>
+        </div>
+        <div class="right">
+          <div class="karakterContainer">
+            <img src="tema4/karen.svg" alt="karen karakter" />
+            <img src="tema4/baby.svg" alt="baby karakter" />
+            <img src="tema4/mimeren.svg" alt="mimer karakter" />
+            <img src="tema4/soveren.svg" alt="sovende karakter" />
+          </div>
+        </div>
+      </section>
+      <section class="grid">
+        <div class="left">
+          <div class="kodeContainer">
+            <img src="tema4/koden.png" alt="javascript kode" />
+          </div>
+        </div>
+        <div class="rigth">
+          <h2>Kodningsdelen aka Javascript</h2>
+          <p>
+            Spillet er bygget op med en relativ simpel logik, men den var noget
+            langhåret da vi skulle lære det.
+          </p>
+          <p>
+            Alle elementer som der skulle arbejdes med skulle findes i DOM'en,
+            og det er i bund og grund det document.querySelector gør. I
+            parantesen der følger skal man markere hvilket element man vil have
+            fat it, som det kan ses på screenshottet er det de forskellige
+            karakterer som der bliver hevet fat i på baggrund af deres id.
+          </p>
+          <p>
+            Når først elementer er fundet i DOM'en kan der tilføjes event
+            listeners, som er en funktionalitet som holder øje med et element.
+            Vi brugte det til at checke om elementet blev klikket på.
+          </p>
+          <p>
+            Herfra var det bare at tilføje en CSS klasse til elementet på
+            klikket, eksempelvis en "skjul" klasse, som gav elementet {display:
+            none} så det forsvandt fra skærmen. Det var også med denne
+            funktionalitet man kunne styre animationerne i spillet.
+          </p>
+        </div>
+      </section>
+      <section class="grid none">
+        <h2>Selve spillet</h2>
+        <p>
+          Hvis det har interesse kan spillet findes på følgende
+          <a href="https://vinterfjell.dk/kea/04_animation/spil/spil.html"
+            >link</a
+          >
+          Jeg havde dog problemer med at få det til at fungerer, da jeg ikke
+          nåede at blive færdig med det under temaet, så skulle sidde og kæmpe
+          med det på egen hånd.
+        </p>
+      </section>
     </main>
+    <div class="spacerLarge"></div>
     <footer>Lavet af Benjamin Rensch Vinterberg</footer>
   </body>
 </html>

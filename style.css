@@ -139,7 +139,9 @@ footer {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-
+.none {
+  display: block;
+}
 .left {
   grid-column-start: 1;
   grid-row-start: 1;
@@ -204,6 +206,12 @@ section {
   background-color: white;
   border-radius: 5px;
   box-shadow: 0px 0px 5px grey;
+}
+
+.karakterContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 25%;
 }
 
 @media (max-width: 600px) {
